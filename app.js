@@ -2,12 +2,13 @@ import express from "express";
 import userRoutes from "./Routes/userRoutes.js";
 import authRoutes from "./Routes/authRoutes.js";
 import productRoutes from "./Routes/productRoutes.js";
+import cors from "cors";
 
 import swaggerUi from "swagger-ui-express";
 import { swaggerDocument } from "./swagger.js";
 
 const app = express();
-
+app.use(cors());
 app.use(express.json());
 
 app.use("/user", userRoutes);

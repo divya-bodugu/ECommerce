@@ -11,7 +11,8 @@ const swaggerDocument = {
 
     servers: [
         {
-            url: "http://localhost:3000",
+            // url: "http://localhost:3000",
+            url: "https://ecommerce-lq03.onrender.com/",
             description: "Local server"
         }
     ],
